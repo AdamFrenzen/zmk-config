@@ -15,13 +15,13 @@
                 default_layer {
 // --------------------------------------   ---------------------------------------
 // | TAB  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | ALT  |
-// | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | ESC  |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  `   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | CTRL |
 //                    | GUI | LWR | SPC |   | BSP | RSE  | RET |
                         display-name = "Base";
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp RALT 
-   &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp ESC   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp GRAVE
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LCTRL
                   &kp LGUI &mo 1 &kp SPACE   &kp BSPC &mo 2 &kp RET
                         >;
@@ -42,15 +42,15 @@
                 };      
                 raise_layer {
 // --------------------------------------   --------------------------------------
-// |  TAB |  !  |  @  |  #  |  "  |  (  |   |  )  |  ;  |  *  |  (  |  )  | ALT  |
-// |  ~   |     |     |  ;  |  '  |  [  |   |  ]  |  =  |  :  |  ]  |  \  |  `   |
-// | SHFT |     |     |  +  |  ,  |  {  |   |  }  |  .  |  -  |  }  | "|" | CTRL |
+// |  TAB |     |     |     |  "  |  (  |   |  )  |  &  |     |     |     | LALT |
+// |  ~   |     |     |     |  '  |  [  |   |  ]  |  =  |     |     |     |  `   |
+// | SHFT |     |     |  +  | LALT|  {  |   |  }  | "|" |  -  |  _  |  \  | CTRL |
 //                    | GUI |     | SPC |   | BSP |     | RET |
                         display-name = "Raise";
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DQT   &kp LPAR    &kp RPAR  &kp SEMI  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp RALT
-   &kp TILDE &trans   &trans &kp SEMI &kp SQT   &kp LBKT    &kp RBKT  &kp EQUAL &kp COLON       &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &kp PLUS &kp COMMA &kp LBRC    &kp RBRC  &kp DOT   &kp MINUS       &kp RBRC &kp PIPE &kp LCTRL
+   &kp  TAB  &trans    &trans &trans   &kp DQT   &kp LPAR    &kp RPAR  &kp AMPERSAND &trans    &trans         &trans &kp LALT
+   &kp TILDE &kp LC(A) &trans &trans   &kp SQT   &kp LBKT    &kp RBKT  &kp EQUAL     &trans    &trans         &trans &kp GRAVE
+   &kp LSHFT &trans    &trans &kp PLUS &kp LALT  &kp LBRC    &kp RBRC  &kp PIPE      &kp MINUS &kp UNDERSCORE &kp BSLH &kp LCTRL
                     	     &kp LGUI &trans    &kp SPACE   &kp BSPC  &trans    &kp RET
                         >;
                 };
